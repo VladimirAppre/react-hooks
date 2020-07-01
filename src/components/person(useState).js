@@ -54,6 +54,7 @@ const PersonUseState = () => {
 
   return (
     <>
+      <h3>Use state</h3>
       <p>Имя: {person.firstName}</p>
       <p>Фамилия: {person.lastName}</p>
       <form onSubmit={changeData}>

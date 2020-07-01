@@ -34,7 +34,9 @@ const HookSwitcher = () => {
         onClick={() => setFontSize((s) => s + 2)}>
         + 2px Size
       </button>
+      <hr/>
     </div>
+
   );
 };
 
