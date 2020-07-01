@@ -3,6 +3,8 @@ import ReactDom from "react-dom";
 import PersonUseState from "./components/person(useState)";
 import Child, {MyContext} from "./components/use-context";
 import {UseEffectApp} from "./components/use-effect";
+import PlanetInfoMyHook from "./components/hookPlanetInfo";
+import {UseEffectApp2} from "./components/useCallBack-UseMemo";
 
 const App = () => {
   return (
@@ -13,7 +15,11 @@ const App = () => {
         <Child />
       </MyContext.Provider>
       <hr/>
-      <UseEffectApp />
+      {/*<UseEffectApp />*/}
+      <hr/>
+      <PlanetInfoMyHook id={1} />
+      <hr/>
+      <UseEffectApp2/>
     </>
   );
 };

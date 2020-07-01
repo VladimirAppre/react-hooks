@@ -70,13 +70,13 @@ const Notification = () => {
 const PlanetInfo = ({id}) => {
   const [planetName, setPlanetName] = useState('planetName');
 
-const fetchService = new FetchService();
-const {getPlanetName} = fetchService;
+  const fetchService = new FetchService();
+  const {getPlanetName} = fetchService;
 
-const getName = async (condition) => {
-  const resultName = await getPlanetName(id)
-   !condition && setPlanetName(resultName);
-};
+  const getName = async (condition) => {
+    const resultName = await getPlanetName(id)
+    !condition && setPlanetName(resultName);
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -90,11 +90,6 @@ const getName = async (condition) => {
     </>
   )
 }
-
-
-
-
-
 
 
 class ClassCounter extends Component {
